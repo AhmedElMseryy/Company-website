@@ -21,7 +21,9 @@ Route::name('front.')->group(function(){
     Route::view('/contact','front.contact')->name('contact');
 });
 
-
+Route::name('admin.')->prefix('admin/')->group(function(){
+    Route::view('','admin.index')->name('index');
+});
 
 Route::get('/dashboard', function () {
     return view('dashboard');
