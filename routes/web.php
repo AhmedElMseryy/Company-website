@@ -1,8 +1,10 @@
 <?php
 
+use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\FeatureController;
+use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
-use Illuminate\Support\Facades\Route;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 ##----------------------------------- FRONT ROUTES
@@ -28,6 +30,14 @@ Route::name('admin.')->prefix(LaravelLocalization::setLocale() . '/admin')->midd
         //============================== SERVICES
         Route::controller(ServiceController::class)->group(function () {
             Route::resource('services', ServiceController::class);
+        });
+        //============================== FEATURES
+        Route::controller(FeatureController::class)->group(function () {
+            Route::resource('features', FeatureController::class);
+        });
+        //============================== MESSAGES
+        Route::controller(MessageController::class)->group(function () {
+            Route::resource('messages', MessageController::class)->only(['index', 'show', 'destroy']);
         });
     });
     require __DIR__ . '/auth.php';

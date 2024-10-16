@@ -16,21 +16,36 @@ return [
     //Home page 
     'home' => 'Home',
 
-    //Services page 
+    //Common Translations
     'components' => 'Components',
-    'services' => 'Services',
-    'title' => 'Title',
-    'icon' => 'Icon',
     'actions' => 'Actions',
     'add_new' => 'Add New',
     'submit' => 'Submit',
+    'created_successfully' => 'Your record created successfully',
+    'updated_successfully' => 'Your record updated successfully',
+    'deleted_successfully' => 'Your record has been deleted successfully',
     'no_found_records' => 'No Found Records',
+
+    //Services page 
+    'services' => 'Services',
+    'title' => 'Title',
+    'icon' => 'Icon',
     'add_new_service' => 'Add New Service',
     'show_service' => 'Show Service',
     'edit_service' => 'Edit Service',
     'description' => 'Description',
-    'created_successfully' => 'Your record created successfully',
-    'updated_successfully' => 'Your record updated successfully',
-    'deleted_successfully' => 'Your record has been deleted successfully',
+
+    //Features page 
+    'features' => 'Features',
+    'add_new_feature' => 'Add New Feature',
+    'show_feature' => 'Show Feature',
+    'edit_feature' => 'Edit Feature',
+
+    //Messages page 
+    'messages' => 'Messages',
+    'show_messages' => 'Show Message',
+    'name' => 'Name',
+    'email' => 'Email',
+    'subject' => 'Subject',
 
 ];
