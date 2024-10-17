@@ -37,7 +37,8 @@
                                         <tr>
                                             <td>{{ $features->firstItem() + $loop->index }}</td>
                                             <td>{{ $feature->title }}</td>
-                                            <td><i class="{{ $feature->icon }} fa-2x"></i></td>
+                                            <td width="15%">{{ $feature->icon }}</td>
+
                                             <td>
                                                 <!-- Edit Button -->
                                                 <x-action-button

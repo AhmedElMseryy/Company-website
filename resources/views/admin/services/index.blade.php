@@ -27,7 +27,7 @@
                                 <tr>
                                     <th width="5%">#</th>
                                     <th>{{ __('keywords.title') }}</th>
-                                    <th width="10%">{{ __('keywords.icon') }}</th>
+                                    <th width="15%">{{ __('keywords.icon') }}</th>
                                     <th width="15%">{{ __('keywords.actions') }}</th>
                                 </tr>
                             </thead>
@@ -37,7 +37,8 @@
                                         <tr>
                                             <td>{{ $services->firstItem() + $loop->index }}</td>
                                             <td>{{ $service->title }}</td>
-                                            <td><i class="{{ $service->icon }} fa-2x"></i></td>
+                                            <td>{{ $service->icon }}</td>
+
                                             <td>
                                                 <!-- Edit Button -->
                                                 <x-action-button
