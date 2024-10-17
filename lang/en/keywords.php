@@ -64,4 +64,13 @@ return [
     'add_new_companies' => 'Add New Companies',
     'show_companies' => 'Show Companies',
     'edit_companies' => 'Edit Companies',
+
+    //Members page 
+    'members' => 'Members',
+    'add_new_member' => 'Add New Members',
+    'show_member' => 'Show Members',
+    'edit_member' => 'Edit Members',
+    'facebook' => 'Facebook',
+    'twitter' => 'Twitter',
+    'linkedin' => 'Linkedin',
 ];

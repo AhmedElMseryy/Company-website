@@ -3,6 +3,7 @@
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\FeatureController;
+use App\Http\Controllers\MemberController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
@@ -53,6 +54,10 @@ Route::name('admin.')->prefix(LaravelLocalization::setLocale() . '/admin')->midd
         //============================== COMPANIES
         Route::controller(CompanyController::class)->group(function () {
             Route::resource('companies', CompanyController::class);
+        });
+        //============================== MEMBERS
+        Route::controller(MemberController::class)->group(function () {
+            Route::resource('members', MemberController::class);
         });
     });
     require __DIR__ . '/auth.php';
