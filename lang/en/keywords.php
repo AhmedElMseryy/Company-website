@@ -73,4 +73,12 @@ return [
     'facebook' => 'Facebook',
     'twitter' => 'Twitter',
     'linkedin' => 'Linkedin',
+
+    //Settings page 
+    'settings' => 'Settings',
+    'address' => 'Address',
+    'phone' => 'Phone',
+    'youtube' => 'Youtube',
+    'instagram' => 'Instagram',
+
 ];
