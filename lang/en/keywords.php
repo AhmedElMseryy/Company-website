@@ -48,4 +48,20 @@ return [
     'email' => 'Email',
     'subject' => 'Subject',
 
+    //Subscribers page 
+    'subscribers' => 'Subscribers',
+
+    //Testimonials page 
+    'testimonials' => 'Testimonials',
+    'position' => 'Position',
+    'image' => 'Image',
+    'add_new_testimonials' => 'Add New Testimonials',
+    'show_testimonials' => 'Show Testimonials',
+    'edit_testimonials' => 'Edit Testimonials',
+
+    //Companies page 
+    'companies' => 'Companies',
+    'add_new_companies' => 'Add New Companies',
+    'show_companies' => 'Show Companies',
+    'edit_companies' => 'Edit Companies',
 ];

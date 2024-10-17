@@ -1,10 +1,13 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\CompanyController;
 use App\Http\Controllers\FeatureController;
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\ServiceController;
+use App\Http\Controllers\SubscriberController;
+use App\Http\Controllers\TestimonialController;
 use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 ##----------------------------------- FRONT ROUTES
@@ -38,6 +41,18 @@ Route::name('admin.')->prefix(LaravelLocalization::setLocale() . '/admin')->midd
         //============================== MESSAGES
         Route::controller(MessageController::class)->group(function () {
             Route::resource('messages', MessageController::class)->only(['index', 'show', 'destroy']);
+        });
+        //============================== SUBSCRIBERS
+        Route::controller(SubscriberController::class)->group(function () {
+            Route::resource('subscribers', SubscriberController::class)->only(['index', 'destroy']);
+        });
+        //============================== TESTIMONIALS
+        Route::controller(TestimonialController::class)->group(function () {
+            Route::resource('testimonials', TestimonialController::class);
+        });
+        //============================== COMPANIES
+        Route::controller(CompanyController::class)->group(function () {
+            Route::resource('companies', CompanyController::class);
         });
     });
     require __DIR__ . '/auth.php';
